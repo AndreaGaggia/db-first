@@ -21,10 +21,19 @@ inserire dei dati a piacere per poter effettuare le seguenti ricerche
     SELECT * FROM `ospiti` WHERE `età` >= 30
 
 - selezionare tutte le prenotazioni precedenti ad una data a piacere
+    SELECT * FROM prenotazioni WHERE data_prenotazione < '2021-01-01';
+
 ## Altre ricerche (opzionali)
 - seleziona tutti gli ospiti nati dopo una certa data
+    SELECT * FROM ospiti WHERE data_nascita > '1980-01-01'
+
 - calcola il totale degli ordini ricevuti
+    SELECT COUNT(id) FROM prenotazioni
+
 - calcola il prezzo massimo pagato
+
+
 - calcola quanti posti letto ha l'hotel in totale
+    SELECT SUM(capacity) as 'posti letto totali' FROM rooms
 
 -->
